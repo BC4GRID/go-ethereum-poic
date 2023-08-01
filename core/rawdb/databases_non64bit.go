@@ -21,7 +21,7 @@ package rawdb
 import (
 	"errors"
 
-	"github.com/frostymuaddib/poic-2023/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
 )
 
 // Pebble is unsuported on 32bit architecture

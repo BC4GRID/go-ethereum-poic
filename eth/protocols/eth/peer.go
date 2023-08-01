@@ -22,10 +22,10 @@ import (
 	"sync"
 
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/p2p"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 const (

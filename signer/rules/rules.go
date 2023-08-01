@@ -24,11 +24,11 @@ import (
 	"strings"
 
 	"github.com/dop251/goja"
-	"github.com/frostymuaddib/poic-2023/internal/ethapi"
-	"github.com/frostymuaddib/poic-2023/internal/jsre/deps"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/signer/core"
-	"github.com/frostymuaddib/poic-2023/signer/storage"
+	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
+	"github.com/frostymuaddib/go-ethereum-master/internal/jsre/deps"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core"
+	"github.com/frostymuaddib/go-ethereum-master/signer/storage"
 )
 
 // consoleOutput is an override for the console.log and console.error methods to

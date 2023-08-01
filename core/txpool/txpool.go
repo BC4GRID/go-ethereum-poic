@@ -22,12 +22,12 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/event"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/event"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
 )
 
 // TxStatus is the current status of a transaction as seen by the pool.

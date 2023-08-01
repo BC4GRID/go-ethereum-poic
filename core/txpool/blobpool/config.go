@@ -17,7 +17,7 @@
 package blobpool
 
 import (
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 // Config are the configuration parameters of the blob transaction pool.

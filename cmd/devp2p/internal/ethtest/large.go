@@ -20,9 +20,9 @@ import (
 	"crypto/rand"
 	"math/big"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
 )
 
 // largeNumber returns a very large big.Int.

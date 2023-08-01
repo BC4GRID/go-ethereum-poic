@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/frostymuaddib/poic-2023
+go_import_path: github.com/frostymuaddib/go-ethereum-master
 sudo: false
 jobs:
   allow_failures:

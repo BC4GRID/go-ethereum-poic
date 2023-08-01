@@ -19,10 +19,10 @@ package ethtest
 import (
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/eth/protocols/eth"
-	"github.com/frostymuaddib/poic-2023/internal/utesting"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
+	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
 )
 
 // Suite represents a structure used to test a node's conformance

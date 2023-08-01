@@ -21,16 +21,16 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/eth/ethconfig"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/light"
-	"github.com/frostymuaddib/poic-2023/p2p"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/eth/ethconfig"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/light"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 )
 
 func errResp(code errCode, format string, v ...interface{}) error {

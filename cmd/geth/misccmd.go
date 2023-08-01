@@ -22,8 +22,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/internal/version"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/internal/version"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 	"github.com/urfave/cli/v2"
 )
 

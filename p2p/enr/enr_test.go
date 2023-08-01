@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

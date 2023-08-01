@@ -24,17 +24,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/beacon/engine"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/eth"
-	"github.com/frostymuaddib/poic-2023/eth/downloader"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/miner"
-	"github.com/frostymuaddib/poic-2023/node"
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/beacon/engine"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/eth"
+	"github.com/frostymuaddib/go-ethereum-master/eth/downloader"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/miner"
+	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 // Register adds the engine API to the full node.

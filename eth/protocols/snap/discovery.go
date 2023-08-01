@@ -17,7 +17,7 @@
 package snap
 
 import (
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 // enrEntry is the ENR entry which advertises `snap` protocol on the discovery.

@@ -22,9 +22,9 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/vm"
-	"github.com/frostymuaddib/poic-2023/eth/tracers"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/eth/tracers"
 )
 
 func init() {

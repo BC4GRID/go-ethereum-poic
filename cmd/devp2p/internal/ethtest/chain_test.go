@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/eth/protocols/eth"
-	"github.com/frostymuaddib/poic-2023/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
 	"github.com/stretchr/testify/assert"
 )
 

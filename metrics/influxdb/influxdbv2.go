@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api"
 )

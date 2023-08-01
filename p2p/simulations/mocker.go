@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/simulations/adapters"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/simulations/adapters"
 )
 
 // a map of mocker names to its function

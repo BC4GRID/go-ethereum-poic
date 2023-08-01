@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/core/forkid"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/core/forkid"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/urfave/cli/v2"
 )
 

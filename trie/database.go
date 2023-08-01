@@ -20,11 +20,11 @@ import (
 	"errors"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/trie/triedb/hashdb"
-	"github.com/frostymuaddib/poic-2023/trie/trienode"
-	"github.com/frostymuaddib/poic-2023/trie/triestate"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/trie/triedb/hashdb"
+	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
+	"github.com/frostymuaddib/go-ethereum-master/trie/triestate"
 )
 
 // Config defines all necessary options for database.

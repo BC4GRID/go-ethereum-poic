@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 )
 
 // TestPack tests the general pack/unpack tests in packing_test.go

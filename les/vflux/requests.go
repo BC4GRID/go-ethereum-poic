@@ -21,7 +21,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 var ErrNoReply = errors.New("no reply for given request")

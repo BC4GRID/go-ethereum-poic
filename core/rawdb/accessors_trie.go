@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"golang.org/x/crypto/sha3"
 )
 

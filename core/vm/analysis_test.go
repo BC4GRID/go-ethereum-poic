@@ -20,7 +20,7 @@ import (
 	"math/bits"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

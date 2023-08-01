@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
 )
 
 // EthereumAPI provides an API to access Ethereum full node-related information.

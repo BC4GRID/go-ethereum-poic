@@ -21,9 +21,9 @@ import (
 	"bytes"
 	"encoding/binary"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
 )
 
 // The fields below define the low level database schema prefixing.

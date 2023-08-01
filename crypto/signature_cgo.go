@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/common/math"
-	"github.com/frostymuaddib/poic-2023/crypto/secp256k1"
+	"github.com/frostymuaddib/go-ethereum-master/common/math"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

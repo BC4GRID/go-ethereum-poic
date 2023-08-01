@@ -23,14 +23,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/math"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/crypto/blake2b"
-	"github.com/frostymuaddib/poic-2023/crypto/bls12381"
-	"github.com/frostymuaddib/poic-2023/crypto/bn256"
-	"github.com/frostymuaddib/poic-2023/crypto/kzg4844"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/math"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/blake2b"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/bls12381"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/bn256"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/kzg4844"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

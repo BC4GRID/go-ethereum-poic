@@ -20,8 +20,8 @@
 package node
 
 import (
-	"github.com/frostymuaddib/poic-2023/p2p"
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 // NoopLifecycle is a trivial implementation of the Service interface.

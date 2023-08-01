@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/console/prompt"
+	"github.com/frostymuaddib/go-ethereum-master/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

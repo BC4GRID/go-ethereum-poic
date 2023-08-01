@@ -20,9 +20,9 @@ package ethash
 import (
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/consensus"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/consensus"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 // Ethash is a consensus engine based on proof-of-work implementing the ethash

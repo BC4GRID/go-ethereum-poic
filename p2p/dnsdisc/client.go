@@ -27,12 +27,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common/lru"
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/common/lru"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
 	"golang.org/x/sync/singleflight"
 	"golang.org/x/time/rate"
 )

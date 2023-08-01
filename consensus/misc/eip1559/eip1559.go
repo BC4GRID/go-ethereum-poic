@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/math"
-	"github.com/frostymuaddib/poic-2023/consensus/misc"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/math"
+	"github.com/frostymuaddib/go-ethereum-master/consensus/misc"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 )
 
 // VerifyEIP1559Header verifies some header attributes which were changed in EIP-1559,

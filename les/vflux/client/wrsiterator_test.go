@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/p2p/nodestate"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
 )
 
 var (

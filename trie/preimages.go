@@ -19,9 +19,9 @@ package trie
 import (
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
 )
 
 // preimageStore is the store for caching preimages of node key.

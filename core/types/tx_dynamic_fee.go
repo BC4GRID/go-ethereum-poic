@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 )
 
 // DynamicFeeTx represents an EIP-1559 transaction.

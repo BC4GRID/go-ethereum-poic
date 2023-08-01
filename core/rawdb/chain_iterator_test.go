@@ -22,8 +22,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
 	"golang.org/x/exp/slices"
 )
 

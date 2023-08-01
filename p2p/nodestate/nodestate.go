@@ -23,13 +23,13 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/metrics"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 var (

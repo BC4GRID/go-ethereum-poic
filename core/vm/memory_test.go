@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 )
 
 func TestMemoryCopy(t *testing.T) {

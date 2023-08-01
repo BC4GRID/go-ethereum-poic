@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
 )
 
 var (

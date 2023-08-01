@@ -23,13 +23,13 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/consensus/ethash"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/vm"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/trie"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/trie"
 )
 
 func TestInvalidCliqueConfig(t *testing.T) {

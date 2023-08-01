@@ -19,7 +19,7 @@ package keystore
 import (
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/accounts/keystore"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
 )
 
 func Fuzz(input []byte) int {

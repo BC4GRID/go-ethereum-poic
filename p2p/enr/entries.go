@@ -22,7 +22,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 // Entry is implemented by known node record entry types.

@@ -19,12 +19,12 @@ package tests
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 // TransactionTest checks RLP decoding and sender derivation of transactions.

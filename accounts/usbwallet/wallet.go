@@ -25,12 +25,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023"
-	"github.com/frostymuaddib/poic-2023/accounts"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master"
+	"github.com/frostymuaddib/go-ethereum-master/accounts"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/karalabe/usb"
 )
 

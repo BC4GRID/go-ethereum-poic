@@ -23,14 +23,14 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/metrics"
-	"github.com/frostymuaddib/poic-2023/rlp"
-	"github.com/frostymuaddib/poic-2023/trie"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/trie"
 )
 
 var (

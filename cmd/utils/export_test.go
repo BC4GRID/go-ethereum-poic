@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 // TestExport does basic sanity checks on the export/import functionality

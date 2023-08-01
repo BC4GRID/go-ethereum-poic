@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/tests/fuzzers/rangeproof"
+	"github.com/frostymuaddib/go-ethereum-master/tests/fuzzers/rangeproof"
 )
 
 func main() {

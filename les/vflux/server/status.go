@@ -19,7 +19,7 @@ package server
 import (
 	"reflect"
 
-	"github.com/frostymuaddib/poic-2023/p2p/nodestate"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
 )
 
 type peerWrapper struct{ clientPeer } // the NodeStateMachine type system needs this wrapper

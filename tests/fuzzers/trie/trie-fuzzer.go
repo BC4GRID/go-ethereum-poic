@@ -22,10 +22,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/trie"
-	"github.com/frostymuaddib/poic-2023/trie/trienode"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/trie"
+	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
 )
 
 // randTest performs random trie operations.

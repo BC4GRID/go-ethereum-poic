@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

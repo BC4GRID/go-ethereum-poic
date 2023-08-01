@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/consensus/ethash"
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/eth"
-	"github.com/frostymuaddib/poic-2023/eth/ethconfig"
-	"github.com/frostymuaddib/poic-2023/node"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/eth"
+	"github.com/frostymuaddib/go-ethereum-master/eth/ethconfig"
+	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 // Verify that Client implements the ethereum interfaces.

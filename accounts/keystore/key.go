@@ -28,9 +28,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/accounts"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/accounts"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
 	"github.com/google/uuid"
 )
 

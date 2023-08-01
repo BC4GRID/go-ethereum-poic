@@ -20,8 +20,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 const freezerVersion = 1 // The initial version tag of freezer table metadata

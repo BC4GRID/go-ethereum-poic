@@ -17,10 +17,10 @@
 package eth
 
 import (
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/forkid"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/forkid"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 // enrEntry is the ENR entry which advertises `eth` protocol on the discovery.

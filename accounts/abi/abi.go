@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
 )
 
 // The ABI holds information about a contract's context and available

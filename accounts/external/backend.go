@@ -22,15 +22,15 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023"
-	"github.com/frostymuaddib/poic-2023/accounts"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/event"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/rpc"
-	"github.com/frostymuaddib/poic-2023/signer/core/apitypes"
+	"github.com/frostymuaddib/go-ethereum-master"
+	"github.com/frostymuaddib/go-ethereum-master/accounts"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/event"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core/apitypes"
 )
 
 type ExternalBackend struct {

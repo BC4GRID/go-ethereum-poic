@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/cmd/devp2p/internal/v4test"
-	"github.com/frostymuaddib/poic-2023/internal/utesting"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/v4test"
+	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/urfave/cli/v2"
 )
 

@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 // measurementImpact is the impact a single measurement has on a peer's final

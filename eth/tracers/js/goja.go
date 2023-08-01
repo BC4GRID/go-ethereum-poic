@@ -24,12 +24,12 @@ import (
 
 	"github.com/dop251/goja"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/vm"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/eth/tracers"
-	jsassets "github.com/frostymuaddib/poic-2023/eth/tracers/js/internal/tracers"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/eth/tracers"
+	jsassets "github.com/frostymuaddib/go-ethereum-master/eth/tracers/js/internal/tracers"
 )
 
 var assetTracers = make(map[string]string)

@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
 )
 
 func TestReadNodes(t *testing.T) {

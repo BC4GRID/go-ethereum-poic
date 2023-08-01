@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/frostymuaddib/poic-2023/cmd/devp2p/internal/ethtest"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/p2p"
-	"github.com/frostymuaddib/poic-2023/p2p/rlpx"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/ethtest"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/rlpx"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/urfave/cli/v2"
 )
 

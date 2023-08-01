@@ -20,7 +20,7 @@
 package metrics
 
 import (
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/shirou/gopsutil/cpu"
 )
 

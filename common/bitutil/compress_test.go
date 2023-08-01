@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

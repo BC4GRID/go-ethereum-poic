@@ -19,7 +19,7 @@ package utils
 import (
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
 )
 
 func TestValueExpiration(t *testing.T) {

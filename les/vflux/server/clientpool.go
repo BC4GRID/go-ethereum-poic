@@ -21,14 +21,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/les/utils"
-	"github.com/frostymuaddib/poic-2023/les/vflux"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/nodestate"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/les/utils"
+	"github.com/frostymuaddib/go-ethereum-master/les/vflux"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 var (

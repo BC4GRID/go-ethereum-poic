@@ -5,8 +5,8 @@ Maintainer: {{.Author}}
 Build-Depends: debhelper (>= 8.0.0), {{.GoBootPackage}}
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: https://github.com/frostymuaddib/poic-2023.git
-Vcs-Browser: https://github.com/frostymuaddib/poic-2023
+Vcs-Git: https://github.com/frostymuaddib/go-ethereum-master.git
+Vcs-Browser: https://github.com/frostymuaddib/go-ethereum-master
 
 Package: {{.Name}}
 Architecture: any

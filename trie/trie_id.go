@@ -16,7 +16,7 @@
 
 package trie
 
-import "github.com/frostymuaddib/poic-2023/common"
+import "github.com/frostymuaddib/go-ethereum-master/common"
 
 // ID is the identifier for uniquely identifying a trie.
 type ID struct {

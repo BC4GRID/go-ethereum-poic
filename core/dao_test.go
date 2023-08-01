@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/consensus/ethash"
-	"github.com/frostymuaddib/poic-2023/core/rawdb"
-	"github.com/frostymuaddib/poic-2023/core/vm"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
+	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 )
 
 // Tests that DAO-fork enabled clients can properly filter out fork-commencing

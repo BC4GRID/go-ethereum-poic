@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 func TestFeeHistory(t *testing.T) {

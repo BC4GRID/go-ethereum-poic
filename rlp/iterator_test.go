@@ -19,7 +19,7 @@ package rlp
 import (
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
 )
 
 // TestIterator tests some basic things about the ListIterator. A more

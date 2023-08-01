@@ -19,9 +19,9 @@ package core
 import (
 	"sync/atomic"
 
-	"github.com/frostymuaddib/poic-2023/core/state"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/core/state"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

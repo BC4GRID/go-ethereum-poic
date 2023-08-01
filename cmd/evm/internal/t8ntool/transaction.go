@@ -24,14 +24,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/rlp"
-	"github.com/frostymuaddib/poic-2023/tests"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/tests"
 	"github.com/urfave/cli/v2"
 )
 

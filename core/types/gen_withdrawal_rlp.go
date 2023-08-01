@@ -5,7 +5,7 @@
 
 package types
 
-import "github.com/frostymuaddib/poic-2023/rlp"
+import "github.com/frostymuaddib/go-ethereum-master/rlp"
 import "io"
 
 func (obj *Withdrawal) EncodeRLP(_w io.Writer) error {

@@ -17,8 +17,8 @@
 package snapshot
 
 import (
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
 )
 
 // holdableIterator is a wrapper of underlying database iterator. It extends

@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/metrics"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

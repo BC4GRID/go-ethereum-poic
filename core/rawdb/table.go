@@ -17,7 +17,7 @@
 package rawdb
 
 import (
-	"github.com/frostymuaddib/poic-2023/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

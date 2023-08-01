@@ -32,8 +32,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"golang.org/x/exp/slices"
 )
 

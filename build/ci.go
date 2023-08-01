@@ -53,10 +53,10 @@ import (
 	"time"
 
 	"github.com/cespare/cp"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto/signify"
-	"github.com/frostymuaddib/poic-2023/internal/build"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/signify"
+	"github.com/frostymuaddib/go-ethereum-master/internal/build"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 )
 
 var (
@@ -248,8 +248,8 @@ func doInstall(cmdline []string) {
 func buildFlags(env build.Environment, staticLinking bool, buildTags []string) (flags []string) {
 	var ld []string
 	if env.Commit != "" {
-		ld = append(ld, "-X", "github.com/frostymuaddib/poic-2023/internal/version.gitCommit="+env.Commit)
-		ld = append(ld, "-X", "github.com/frostymuaddib/poic-2023/internal/version.gitDate="+env.Date)
+		ld = append(ld, "-X", "github.com/frostymuaddib/go-ethereum-master/internal/version.gitCommit="+env.Commit)
+		ld = append(ld, "-X", "github.com/frostymuaddib/go-ethereum-master/internal/version.gitDate="+env.Date)
 	}
 	// Strip DWARF on darwin. This used to be required for certain things,
 	// and there is no downside to this, so we just keep doing it.

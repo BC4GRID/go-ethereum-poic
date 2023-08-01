@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/eth"
-	"github.com/frostymuaddib/poic-2023/eth/ethconfig"
-	"github.com/frostymuaddib/poic-2023/internal/utesting"
-	"github.com/frostymuaddib/poic-2023/node"
-	"github.com/frostymuaddib/poic-2023/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/eth"
+	"github.com/frostymuaddib/go-ethereum-master/eth/ethconfig"
+	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
+	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
 )
 
 var (

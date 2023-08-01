@@ -19,9 +19,9 @@ package downloader
 import (
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/eth/protocols/eth"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 // receiptQueue implements typedQueue and is a type adapter between the generic

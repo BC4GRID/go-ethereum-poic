@@ -19,8 +19,8 @@ package client
 import (
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/nodestate"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
 )
 
 // QueueIterator returns nodes from the specified selectable set in the same order as

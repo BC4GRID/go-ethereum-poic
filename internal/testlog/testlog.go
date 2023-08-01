@@ -21,7 +21,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 // Handler returns a log handler which logs to the unit test log of t.

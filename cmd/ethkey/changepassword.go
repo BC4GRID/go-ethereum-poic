@@ -21,8 +21,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/accounts/keystore"
-	"github.com/frostymuaddib/poic-2023/cmd/utils"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
 	"github.com/urfave/cli/v2"
 )
 

@@ -24,7 +24,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 type storedCredential struct {

@@ -24,9 +24,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/beacon/merkle"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/beacon/merkle"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
 	"gopkg.in/yaml.v3"
 )
 

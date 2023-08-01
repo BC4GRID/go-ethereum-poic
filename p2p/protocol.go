@@ -19,8 +19,8 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
 )
 
 // Protocol represents a P2P subprotocol implementation.

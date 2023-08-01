@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/core/asm"
+	"github.com/frostymuaddib/go-ethereum-master/core/asm"
 	"github.com/urfave/cli/v2"
 )
 

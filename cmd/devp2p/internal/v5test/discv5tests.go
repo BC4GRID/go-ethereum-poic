@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/internal/utesting"
-	"github.com/frostymuaddib/poic-2023/p2p/discover/v5wire"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/netutil"
+	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/discover/v5wire"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/netutil"
 )
 
 // Suite is the discv5 test suite.

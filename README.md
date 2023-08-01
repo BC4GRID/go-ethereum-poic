@@ -4,9 +4,9 @@ Official Golang execution layer implementation of the Ethereum protocol.
 
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
-)](https://pkg.go.dev/github.com/frostymuaddib/poic-2023?tab=doc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/frostymuaddib/poic-2023)](https://goreportcard.com/report/github.com/frostymuaddib/poic-2023)
-[![Travis](https://travis-ci.com/frostymuaddib/poic-2023.svg?branch=master)](https://travis-ci.com/frostymuaddib/poic-2023)
+)](https://pkg.go.dev/github.com/frostymuaddib/go-ethereum-master?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/frostymuaddib/go-ethereum-master)](https://goreportcard.com/report/github.com/frostymuaddib/go-ethereum-master)
+[![Travis](https://travis-ci.com/frostymuaddib/go-ethereum-master.svg?branch=master)](https://travis-ci.com/frostymuaddib/go-ethereum-master)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/nthXNEv)
 
 Automated builds are available for stable releases and the unstable master branch. Binary
@@ -344,7 +344,7 @@ testing procedures.
 ### Contributing to geth.ethereum.org
 
 For contributions to the [go-ethereum website](https://geth.ethereum.org), please checkout and raise pull requests against the `website` branch.
-For more detailed instructions please see the `website` branch [README](https://github.com/frostymuaddib/poic-2023/tree/website#readme) or the 
+For more detailed instructions please see the `website` branch [README](https://github.com/frostymuaddib/go-ethereum-master/tree/website#readme) or the 
 [contributing](https://geth.ethereum.org/docs/developers/geth-developer/contributing) page of the website.
 
 ## License

@@ -23,8 +23,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/mattn/go-colorable"
 )
 

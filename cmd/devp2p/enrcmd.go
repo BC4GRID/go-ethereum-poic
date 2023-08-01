@@ -28,9 +28,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/urfave/cli/v2"
 )
 

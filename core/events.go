@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

@@ -35,25 +35,25 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/accounts"
-	"github.com/frostymuaddib/poic-2023/accounts/keystore"
-	"github.com/frostymuaddib/poic-2023/cmd/utils"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/internal/ethapi"
-	"github.com/frostymuaddib/poic-2023/internal/flags"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/node"
-	"github.com/frostymuaddib/poic-2023/params"
-	"github.com/frostymuaddib/poic-2023/rlp"
-	"github.com/frostymuaddib/poic-2023/rpc"
-	"github.com/frostymuaddib/poic-2023/signer/core"
-	"github.com/frostymuaddib/poic-2023/signer/core/apitypes"
-	"github.com/frostymuaddib/poic-2023/signer/fourbyte"
-	"github.com/frostymuaddib/poic-2023/signer/rules"
-	"github.com/frostymuaddib/poic-2023/signer/storage"
+	"github.com/frostymuaddib/go-ethereum-master/accounts"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
+	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core/apitypes"
+	"github.com/frostymuaddib/go-ethereum-master/signer/fourbyte"
+	"github.com/frostymuaddib/go-ethereum-master/signer/rules"
+	"github.com/frostymuaddib/go-ethereum-master/signer/storage"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"
@@ -870,7 +870,7 @@ func checkFile(filename string) error {
 	}
 	// Check the unix permission bits
 	// However, on windows, we cannot use the unix perm-bits, see
-	// https://github.com/frostymuaddib/poic-2023/issues/20123
+	// https://github.com/frostymuaddib/go-ethereum-master/issues/20123
 	if runtime.GOOS != "windows" && info.Mode().Perm()&0377 != 0 {
 		return fmt.Errorf("file (%v) has insecure file permissions (%v)", filename, info.Mode().String())
 	}

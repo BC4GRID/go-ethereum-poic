@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/internal/debug"
-	"github.com/frostymuaddib/poic-2023/internal/flags"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/internal/debug"
+	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
 	"github.com/urfave/cli/v2"
 )
 

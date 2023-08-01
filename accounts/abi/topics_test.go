@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
 )
 
 func TestMakeTopics(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
 )
 
 // Simulation provides a framework for running actions in a simulated network

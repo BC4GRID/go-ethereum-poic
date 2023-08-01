@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 	"github.com/stretchr/testify/assert"
 )
 

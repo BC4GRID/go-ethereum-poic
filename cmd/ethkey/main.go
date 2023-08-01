@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/internal/flags"
+	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

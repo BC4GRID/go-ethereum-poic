@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/poic-2023/cmd/evm/internal/compiler"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/evm/internal/compiler"
 
 	"github.com/urfave/cli/v2"
 )

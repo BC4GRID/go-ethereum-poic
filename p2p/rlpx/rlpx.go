@@ -34,9 +34,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/crypto/ecies"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/crypto/ecies"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/golang/snappy"
 	"golang.org/x/crypto/sha3"
 )

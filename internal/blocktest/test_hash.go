@@ -25,7 +25,7 @@ package blocktest
 import (
 	"hash"
 
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 	"golang.org/x/crypto/sha3"
 )
 

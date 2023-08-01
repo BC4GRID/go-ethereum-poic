@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/frostymuaddib/poic-2023/accounts/abi"
+import "github.com/frostymuaddib/go-ethereum-master/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -91,12 +91,12 @@ import (
 	"strings"
 	"errors"
 
-	ethereum "github.com/frostymuaddib/poic-2023"
-	"github.com/frostymuaddib/poic-2023/accounts/abi"
-	"github.com/frostymuaddib/poic-2023/accounts/abi/bind"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/event"
+	ethereum "github.com/frostymuaddib/go-ethereum-master"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/abi"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/abi/bind"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

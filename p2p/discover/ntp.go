@@ -24,7 +24,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"golang.org/x/exp/slices"
 )
 

@@ -26,11 +26,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/ethdb/leveldb"
-	"github.com/frostymuaddib/poic-2023/ethdb/memorydb"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb/leveldb"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb/memorydb"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/olekukonko/tablewriter"
 )
 

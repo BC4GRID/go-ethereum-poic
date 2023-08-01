@@ -24,14 +24,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/ethdb/memorydb"
-	"github.com/frostymuaddib/poic-2023/les/vflux"
-	vfs "github.com/frostymuaddib/poic-2023/les/vflux/server"
-	"github.com/frostymuaddib/poic-2023/log"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb/memorydb"
+	"github.com/frostymuaddib/go-ethereum-master/les/vflux"
+	vfs "github.com/frostymuaddib/go-ethereum-master/les/vflux/server"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 var (

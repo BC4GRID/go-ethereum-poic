@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/accounts/abi"
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/abi"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 )
 
 // Tests that all the selectors contained in the 4byte database are valid.

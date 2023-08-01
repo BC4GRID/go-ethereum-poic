@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/rpc"
+	"github.com/frostymuaddib/go-ethereum-master/rpc"
 )
 
 // This example configures a HTTP-based RPC client with two options - one setting the

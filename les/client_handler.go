@@ -20,12 +20,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/core/forkid"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/light"
-	"github.com/frostymuaddib/poic-2023/p2p"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/core/forkid"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/light"
+	"github.com/frostymuaddib/go-ethereum-master/p2p"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

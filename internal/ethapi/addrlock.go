@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
+	"github.com/frostymuaddib/go-ethereum-master/common"
 )
 
 type AddrLocker struct {

@@ -24,13 +24,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/cmd/devp2p/internal/v4test"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/internal/flags"
-	"github.com/frostymuaddib/poic-2023/p2p/discover"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/v4test"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/discover"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 	"github.com/urfave/cli/v2"
 )
 

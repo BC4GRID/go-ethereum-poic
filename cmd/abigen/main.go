@@ -24,12 +24,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/accounts/abi/bind"
-	"github.com/frostymuaddib/poic-2023/cmd/utils"
-	"github.com/frostymuaddib/poic-2023/common/compiler"
-	"github.com/frostymuaddib/poic-2023/crypto"
-	"github.com/frostymuaddib/poic-2023/internal/flags"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/abi/bind"
+	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
+	"github.com/frostymuaddib/go-ethereum-master/common/compiler"
+	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 	"github.com/urfave/cli/v2"
 )
 

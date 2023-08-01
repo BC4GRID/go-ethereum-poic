@@ -26,8 +26,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/frostymuaddib/poic-2023/p2p/enr"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 )
 
 var errMissingPrefix = errors.New("missing 'enr:' prefix for base64-encoded record")

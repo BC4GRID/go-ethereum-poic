@@ -23,11 +23,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/common/mclock"
-	"github.com/frostymuaddib/poic-2023/ethdb/memorydb"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb/memorydb"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
 
-	"github.com/frostymuaddib/poic-2023/les/utils"
+	"github.com/frostymuaddib/go-ethereum-master/les/utils"
 )
 
 const (

@@ -27,8 +27,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/ethdb"
-	"github.com/frostymuaddib/poic-2023/rlp"
+	"github.com/frostymuaddib/go-ethereum-master/ethdb"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
 	"github.com/stretchr/testify/require"
 )
 

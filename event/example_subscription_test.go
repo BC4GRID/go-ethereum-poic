@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/poic-2023/event"
+	"github.com/frostymuaddib/go-ethereum-master/event"
 )
 
 func ExampleNewSubscription() {

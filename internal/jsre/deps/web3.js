@@ -5880,7 +5880,7 @@ module.exports = Shh;
  * @author Alex Beregszaszi <alex@rtfs.hu>
  * @date 2016
  *
- * Reference: https://github.com/frostymuaddib/poic-2023/blob/swarm/internal/web3ext/web3ext.go#L33
+ * Reference: https://github.com/frostymuaddib/go-ethereum-master/blob/swarm/internal/web3ext/web3ext.go#L33
  */
 
 "use strict";

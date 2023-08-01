@@ -22,14 +22,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/poic-2023/accounts"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/hexutil"
-	"github.com/frostymuaddib/poic-2023/core/types"
-	"github.com/frostymuaddib/poic-2023/internal/ethapi"
-	"github.com/frostymuaddib/poic-2023/signer/core"
-	"github.com/frostymuaddib/poic-2023/signer/core/apitypes"
-	"github.com/frostymuaddib/poic-2023/signer/storage"
+	"github.com/frostymuaddib/go-ethereum-master/accounts"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core"
+	"github.com/frostymuaddib/go-ethereum-master/signer/core/apitypes"
+	"github.com/frostymuaddib/go-ethereum-master/signer/storage"
 )
 
 const JS = `

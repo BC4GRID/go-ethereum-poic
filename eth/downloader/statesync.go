@@ -19,8 +19,8 @@ package downloader
 import (
 	"sync"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/log"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/log"
 )
 
 // syncState starts downloading state with the given root hash.

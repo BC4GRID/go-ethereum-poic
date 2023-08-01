@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/common/math"
-	"github.com/frostymuaddib/poic-2023/params"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/common/math"
+	"github.com/frostymuaddib/go-ethereum-master/params"
 )
 
 func makeGasSStoreFunc(clearingRefund uint64) gasFunc {

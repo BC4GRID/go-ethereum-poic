@@ -16,7 +16,7 @@
 
 package triestate
 
-import "github.com/frostymuaddib/poic-2023/common"
+import "github.com/frostymuaddib/go-ethereum-master/common"
 
 // Set represents a collection of mutated states during a state transition.
 // The value refers to the original content of state before the transition

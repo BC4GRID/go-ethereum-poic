@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/frostymuaddib/poic-2023/common"
+import "github.com/frostymuaddib/go-ethereum-master/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

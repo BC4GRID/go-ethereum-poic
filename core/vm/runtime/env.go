@@ -17,8 +17,8 @@
 package runtime
 
 import (
-	"github.com/frostymuaddib/poic-2023/core"
-	"github.com/frostymuaddib/poic-2023/core/vm"
+	"github.com/frostymuaddib/go-ethereum-master/core"
+	"github.com/frostymuaddib/go-ethereum-master/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

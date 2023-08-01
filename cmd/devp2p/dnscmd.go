@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/frostymuaddib/poic-2023/accounts/keystore"
-	"github.com/frostymuaddib/poic-2023/common"
-	"github.com/frostymuaddib/poic-2023/console/prompt"
-	"github.com/frostymuaddib/poic-2023/p2p/dnsdisc"
-	"github.com/frostymuaddib/poic-2023/p2p/enode"
+	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
+	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/console/prompt"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/dnsdisc"
+	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
 	"github.com/urfave/cli/v2"
 )
 
