@@ -35,7 +35,7 @@ func abs(num int64) int64 {
 // 	return &random, nil
 // }
 
-func verifyOuterSource(header *types.Header,deltaTime int64) error {
+func verifyOuterSource(header *types.Header, deltaTime int64) error {
 	bytes := [32]byte(header.MixDigest)
 	var timestamp int64
 	if isLittleEndian() {
@@ -44,7 +44,7 @@ func verifyOuterSource(header *types.Header,deltaTime int64) error {
 		timestamp = int64(binary.BigEndian.Uint64(bytes[0:8]))
 	}
 	guicolour.BrightCyanPrintf(true, "Временска ознака током провере блока %d\n", timestamp)
-	blockTime := int64(header.Time.Uint64())
+	blockTime := int64(header.Time)
 	if abs(blockTime-timestamp) > deltaTime {
 		return errors.New("Invalid timestamp of outer data")
 	}

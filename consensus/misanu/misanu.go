@@ -16,6 +16,8 @@ import (
 
 	// "github.com/frostymuaddib/go-ethereum-master/accounts"
 	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/frostymuaddib/go-ethereum-master/trie"
+
 	// "github.com/frostymuaddib/go-ethereum-master/common/hexutil"
 	// "github.com/frostymuaddib/go-ethereum-master/consensus"
 	"github.com/frostymuaddib/go-ethereum-master/consensus/misc"
@@ -32,7 +34,7 @@ import (
 
 	// lru "github.com/hashicorp/golang-lru"
 	//"github.com/frostymuaddib/go-ethereum-master/core/state"
-	"github.com/frostymuaddib/go-ethereum-master/common/math"
+
 	"github.com/frostymuaddib/go-ethereum-master/consensus"
 )
 
@@ -116,9 +118,8 @@ func (p *PoIC) Author(header *types.Header) (common.Address, error) {
 }
 
 // VerifyHeader checks whether a header conforms to the consensus rules of a
-// given engine. Verifying the seal may be done optionally here, or explicitly
-// via the VerifySeal method.
-func (p *PoIC) VerifyHeader(chain consensus.ChainReader, header *types.Header, seal bool) error {
+// given engine.
+func (p *PoIC) VerifyHeader(chain consensus.ChainHeaderReader, header *types.Header) error {
 	// Short circuit if the header is known, or it's parent not
 	number := header.Number.Uint64()
 	if chain.GetHeader(header.Hash(), number) != nil {
@@ -129,14 +130,14 @@ func (p *PoIC) VerifyHeader(chain consensus.ChainReader, header *types.Header, s
 		return consensus.ErrUnknownAncestor
 	}
 	// Sanity checks passed, do a proper verification
-	return p.verifyHeader(chain, header, parent, false, seal)
+	return p.verifyHeader(chain, header, parent, false, true)
 }
 
 // VerifyHeaders is similar to VerifyHeader, but verifies a batch of headers
 // concurrently. The method returns a quit channel to abort the operations and
 // a results channel to retrieve the async verifications (the order is that of
 // the input slice).
-func (p *PoIC) VerifyHeaders(chain consensus.ChainReader, headers []*types.Header, seals []bool) (chan<- struct{}, <-chan error) {
+func (p *PoIC) VerifyHeaders(chain consensus.ChainHeaderReader, headers []*types.Header) (chan<- struct{}, <-chan error) {
 	// Spawn as many workers as allowed threads
 	workers := runtime.GOMAXPROCS(0)
 	if len(headers) < workers {
@@ -153,7 +154,7 @@ func (p *PoIC) VerifyHeaders(chain consensus.ChainReader, headers []*types.Heade
 	for i := 0; i < workers; i++ {
 		go func() {
 			for index := range inputs {
-				errors[index] = p.verifyHeaderWorker(chain, headers, seals, index)
+				errors[index] = p.verifyHeaderWorker(chain, headers, index)
 				done <- index
 			}
 		}()
@@ -244,15 +245,37 @@ func (p *PoIC) VerifyUncles(chain consensus.ChainReader, block *types.Block) err
 // consensus rules that happen at finalization (e.g. block rewards).
 // Finalize implements consensus.Engine, accumulating the block and uncle rewards,
 // setting the final state and assembling the block.
-func (p *PoIC) Finalize(chain consensus.ChainReader, header *types.Header, state *state.StateDB, txs []*types.Transaction,
-	uncles []*types.Header, receipts []*types.Receipt) (*types.Block, error) {
+// func (p *PoIC) Finalize(chain consensus.ChainHeaderReader, header *types.Header, state *state.StateDB, txs []*types.Transaction,
+// 	uncles []*types.Header, receipts []*types.Receipt) (*types.Block, error) {
 
-	// Accumulate any block and uncle rewards and commit the final state root
+// 	// Accumulate any block and uncle rewards and commit the final state root
+// 	accumulateRewards(chain.Config(), state, header, uncles)
+// 	header.Root = state.IntermediateRoot(chain.Config().IsEIP158(header.Number))
+
+// 	// Header seems complete, assemble into a block and return
+// 	return types.NewBlock(header, txs, uncles, receipts), nil
+//}
+
+// Finalize implements consensus.Engine, accumulating the block and uncle rewards.
+func (p *PoIC) Finalize(chain consensus.ChainHeaderReader, header *types.Header, state *state.StateDB, txs []*types.Transaction, uncles []*types.Header, withdrawals []*types.Withdrawal) {
+	// Accumulate any block and uncle rewards
 	accumulateRewards(chain.Config(), state, header, uncles)
+}
+
+// FinalizeAndAssemble implements consensus.Engine, accumulating the block and
+// uncle rewards, setting the final state and assembling the block.
+func (p *PoIC) FinalizeAndAssemble(chain consensus.ChainHeaderReader, header *types.Header, state *state.StateDB, txs []*types.Transaction, uncles []*types.Header, receipts []*types.Receipt, withdrawals []*types.Withdrawal) (*types.Block, error) {
+	if len(withdrawals) > 0 {
+		return nil, errors.New("PoIC does not support withdrawals")
+	}
+	// Finalize block
+	p.Finalize(chain, header, state, txs, uncles, nil)
+
+	// Assign the final state root to header.
 	header.Root = state.IntermediateRoot(chain.Config().IsEIP158(header.Number))
 
 	// Header seems complete, assemble into a block and return
-	return types.NewBlock(header, txs, uncles, receipts), nil
+	return types.NewBlock(header, txs, uncles, receipts, trie.NewStackTrie(nil)), nil
 }
 
 // APIs returns the RPC APIs this consensus engine provides.
@@ -268,27 +291,27 @@ func (p *PoIC) Close() error {
 }
 
 //pomocne Funkcije
-func (p *PoIC) verifyHeader(chain consensus.ChainReader, header, parent *types.Header, uncle bool, seal bool) error {
+func (p *PoIC) verifyHeader(chain consensus.ChainHeaderReader, header, parent *types.Header, uncle bool, seal bool) error {
 	//proverava da li extra-data deo zaglavlja bloka jeste odgovarajuce velicine
 	if uint64(len(header.Extra)) > params.MaximumExtraDataSize {
 		return fmt.Errorf("extra-data too long: %d > %d", len(header.Extra), params.MaximumExtraDataSize)
 	}
 	//proverava vremensku oznaku blokova
 	if uncle {
-		if header.Time.Cmp(math.MaxBig256) > 0 {
-			return errLargeBlockTime
-		}
+		// if header.Time > math.MaxBig256 {
+		// 	return errLargeBlockTime
+		// }
 	} else {
-		if header.Time.Cmp(big.NewInt(time.Now().Add(allowedFutureBlockTime).Unix())) > 0 {
+		if header.Time > uint64(time.Now().Add(allowedFutureBlockTime).Unix()) {
 			return consensus.ErrFutureBlock
 		}
 	}
-	if header.Time.Cmp(parent.Time) <= 0 {
+	if header.Time <= parent.Time {
 		return errZeroBlockTime
 	}
 
 	// Verify the block's difficulty based in it's timestamp and parent's difficulty
-	expected := p.CalcDifficulty(chain, header.Time.Uint64(), parent)
+	expected := p.CalcDifficulty(chain, uint64(header.Time), parent)
 	if expected.Cmp(header.Difficulty) != 0 {
 		return fmt.Errorf("invalid difficulty: have %v, want %v", header.Difficulty, expected)
 	}
@@ -327,13 +350,14 @@ func (p *PoIC) verifyHeader(chain consensus.ChainReader, header, parent *types.H
 	if err := misc.VerifyDAOHeaderExtraData(chain.Config(), header); err != nil {
 		return err
 	}
-	if err := misc.VerifyForkHashes(chain.Config(), header, uncle); err != nil {
-		return err
-	}
+	//Ovo je izbaceno u novoj verziji
+	//if err := misc.VerifyForkHashes(chain.Config(), header, uncle); err != nil {
+	//	return err
+	//}
 	return nil
 }
 
-func (p *PoIC) verifyHeaderWorker(chain consensus.ChainReader, headers []*types.Header, seals []bool, index int) error {
+func (p *PoIC) verifyHeaderWorker(chain consensus.ChainHeaderReader, headers []*types.Header, index int) error {
 	var parent *types.Header
 	if index == 0 {
 		parent = chain.GetHeader(headers[0].ParentHash, headers[0].Number.Uint64()-1)
@@ -346,7 +370,7 @@ func (p *PoIC) verifyHeaderWorker(chain consensus.ChainReader, headers []*types.
 	if chain.GetHeader(headers[index].Hash(), headers[index].Number.Uint64()) != nil {
 		return nil // known block
 	}
-	return p.verifyHeader(chain, headers[index], parent, false, seals[index])
+	return p.verifyHeader(chain, headers[index], parent, false, true)
 }
 
 // Some weird constants to avoid constant memory allocs for them.
@@ -451,7 +475,7 @@ func (p *PoIC) remote() {
 		if currentWork == nil {
 			return res, errNoMiningWork
 		}
-		res[0] = currentWork.HashNoNonce().Hex()
+		res[0] = currentWork.Header().HashNoNonce().Hex()
 		tmp := big.NewInt(2)
 		res[1] = common.BytesToHash(tmp.Bytes()).Hex()
 
@@ -460,7 +484,7 @@ func (p *PoIC) remote() {
 		res[2] = common.BytesToHash(n.Bytes()).Hex()
 
 		// Trace the seal work fetched by remote sealer.
-		works[currentWork.HashNoNonce()] = currentWork
+		works[currentWork.Header().HashNoNonce()] = currentWork
 
 		return res, nil
 	}

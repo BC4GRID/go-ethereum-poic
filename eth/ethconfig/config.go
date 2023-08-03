@@ -26,6 +26,7 @@ import (
 	"github.com/frostymuaddib/go-ethereum-master/consensus/beacon"
 	"github.com/frostymuaddib/go-ethereum-master/consensus/clique"
 	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
+	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu"
 	"github.com/frostymuaddib/go-ethereum-master/core"
 	"github.com/frostymuaddib/go-ethereum-master/core/txpool/blobpool"
 	"github.com/frostymuaddib/go-ethereum-master/core/txpool/legacypool"
@@ -168,6 +169,11 @@ func CreateConsensusEngine(config *params.ChainConfig, db ethdb.Database) (conse
 	if config.Clique != nil {
 		return beacon.New(clique.New(config.Clique, db)), nil
 	}
+
+	if config.PoIC != nil {
+		return misanu.New(config.PoIC, db), nil
+	}
+
 	// If defaulting to proof-of-work, enforce an already merged network since
 	// we cannot run PoW algorithms and more, so we cannot even follow a chain
 	// not coordinated by a beacon node.

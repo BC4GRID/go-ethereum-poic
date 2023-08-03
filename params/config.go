@@ -304,6 +304,9 @@ type ChainConfig struct {
 	Ethash    *EthashConfig `json:"ethash,omitempty"`
 	Clique    *CliqueConfig `json:"clique,omitempty"`
 	IsDevMode bool          `json:"isDev,omitempty"`
+
+	//PoIC algorithm configuration
+	PoIC *PoICConfig `json:"poic,omitempty"`
 }
 
 // EthashConfig is the consensus engine configs for proof-of-work based sealing.
@@ -323,6 +326,33 @@ type CliqueConfig struct {
 // String implements the stringer interface, returning the consensus engine details.
 func (c *CliqueConfig) String() string {
 	return "clique"
+}
+
+//This is misanu Proof of Inversion Capacity algorithm
+type PoICConfig struct {
+	//TODO: misanu Dummy for now
+	EncryptSize uint64 `json:"encryptSize"`
+	TableSize   uint64 `json:"tableSize"`
+	//ExpectedTime predstavlja ocekivano vreme izmedju dva bloka
+	ExpectedTime uint64 `json:"expectedTime"`
+	MiniPoW * MiniPoWConfig `json:"miniPow"`
+	OuterData * OuterDataConfig `json:"outerData"`
+	//StartDiff pocetna tezina - broj bito
+	// to je TableSize
+	//StartDiff uint64	`json:"startDiff"`
+}
+
+type MiniPoWConfig struct {
+	MiniPowDiff int `json:"miniPowDiff"`
+}
+
+type OuterDataConfig struct {
+	TimeInSecs int64 `json:"timeInSecs"`
+}
+
+// String implements the stringer interface, returning the consensus engine details.
+func (p *PoICConfig) String() string {
+	return "PoIC"
 }
 
 // Description returns a human-readable description of ChainConfig.

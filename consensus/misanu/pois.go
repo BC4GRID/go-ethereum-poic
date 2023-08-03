@@ -21,11 +21,14 @@ import (
 	"github.com/frostymuaddib/go-ethereum-master/consensus"
 	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
 	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"golang.org/x/crypto/sha3"
 )
 
-//////////////////
-//Time measuring//
-//////////////////
+// ////////////////
+// Time measuring//
+// ////////////////
 var blockTime time.Time
 
 //ovde se vrsi inicijalizacija protokola, odnosno pravljenje time/memory tradeoff
@@ -35,7 +38,7 @@ var blockTime time.Time
 // rules of a particular engine. The changes are executed inline.
 // Prepare implements consensus.Engine, initializing the difficulty field of a
 // header to conform to the ethash protocol. The changes are done inline.
-func (p *PoIC) Prepare(chain consensus.ChainReader, header *types.Header) error {
+func (p *PoIC) Prepare(chain consensus.ChainHeaderReader, header *types.Header) error {
 	blockTime = time.Now()
 	guicolour.BrightBluePrintf(true, "Почетно време: %s\n", blockTime.String())
 	parent := chain.GetHeader(header.ParentHash, header.Number.Uint64()-1)
@@ -43,14 +46,14 @@ func (p *PoIC) Prepare(chain consensus.ChainReader, header *types.Header) error 
 		return consensus.ErrUnknownAncestor
 	}
 
-	header.Difficulty = p.CalcDifficulty(chain, header.Time.Uint64(), parent)
+	header.Difficulty = p.CalcDifficulty(chain, uint64(header.Time), parent)
 
 	return nil
 }
 
 // VerifySeal checks whether the crypto seal on a header is valid according to
 // the consensus rules of the given engine.
-func (p *PoIC) VerifySeal(chain consensus.ChainReader, header *types.Header) error {
+func (p *PoIC) VerifySeal(chain consensus.ChainHeaderReader, header *types.Header) error {
 	guicolour.BrightBluePrintf(true, "Ушао у VerifySeal\n")
 	//TODO proverit sta je difficulty!!!
 	// Ensure that we have a valid difficulty for the block
@@ -65,8 +68,8 @@ func (p *PoIC) VerifySeal(chain consensus.ChainReader, header *types.Header) err
 
 // CalcDifficulty is the difficulty adjustment algorithm. It returns the difficulty
 // that a new block should have.
-//TODO Treba staviti neko vreme
-func (p *PoIC) CalcDifficulty(chain consensus.ChainReader, time uint64, parent *types.Header) *big.Int {
+// TODO Treba staviti neko vreme
+func (p *PoIC) CalcDifficulty(chain consensus.ChainHeaderReader, time uint64, parent *types.Header) *big.Int {
 
 	// myTestDifficulty := new(big.Int).SetUint64(p.config.TableSize)
 	// deltaTime := new(big.Int)
@@ -130,8 +133,8 @@ func (p *PoIC) verifyKey(header *types.Header) error {
 
 // Seal generates a new block for the given input block with the local miner's
 // seal place on top.
-//samo rudarenje se desava Ovde
-func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan struct{}) (*types.Block, error) {
+// samo rudarenje se desava Ovde
+func (p *PoIC) Seal(chain consensus.ChainHeaderReader, block *types.Block, results chan<- *types.Block, stop <-chan struct{}) error {
 	header := block.Header()
 
 	if p.workCh != nil {
@@ -159,7 +162,7 @@ func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan
 			mixDig, error = createRandomMixDigest()
 		}
 		if error != nil {
-			return nil, error
+			return error
 		}
 		header.MixDigest = *mixDig
 		//hash := header.HashNoNonceWithDigest()
@@ -169,7 +172,7 @@ func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan
 		// fmt.Printf("Pokrece se pretraga tabele za hash %x i za mixDigest %x.\n", hash, header.MixDigest)
 		//mixDigest u sebi ima 32 bita, znaci raditi rand()
 		if !block.Difficulty().IsUint64() {
-			return nil, errors.New("Invalid value for difficulty. It is not uint64")
+			return errors.New("Invalid value for difficulty. It is not uint64")
 		}
 		//guicolour.BrightWhitePrintf(true, "Покреће се Seal за тежину %d\n", block.Difficulty().Uint64())
 		//key, err = p.FindKeyForHashMultiThread(&hash, p.config.TableSize, stop)
@@ -184,7 +187,7 @@ func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan
 		}
 
 		if err != nil {
-			return nil, err
+			return err
 		}
 		if key != nil {
 			//we have the seal, break for
@@ -193,7 +196,18 @@ func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan
 			//imamo spoljni rezultat
 			guicolour.BrightYellowPrintf(true, "\n\n Нађена спољашња вредност: %v.\n", externalRez)
 			guicolour.BrightBluePrintf(true, "Завршно време: %s\n", time.Now().Sub(blockTime).String())
-			return externalRez, nil
+			go func() {
+				select {
+				case <-stop:
+					return
+				case results <- externalRez:
+				default:
+					log.Warn("External sealing result is not read by miner", "sealhash", p.SealHash(header))
+
+				}
+
+			}()
+			return nil
 		}
 	}
 
@@ -204,6 +218,49 @@ func (p *PoIC) Seal(chain consensus.ChainReader, block *types.Block, stop <-chan
 	// guicolour.BrightYellowPrintf(true, "PROVERA: ", err)
 	guicolour.BrightBluePrintf(true, "Завршно време: %s\n", time.Now().Sub(blockTime).String())
 	guicolour.BrightBluePrintf(true, "Број позива Encoding функције: %v\n", cummulativeCounter)
-	return block.WithSeal(header), nil
+	//return block.WithSeal(header), nil
 
+	go func() {
+		select {
+		case <-stop:
+			return
+		case results <- block.WithSeal(header):
+		default:
+			log.Warn("Sealing result is not read by miner", "sealhash", p.SealHash(header))
+
+		}
+
+	}()
+
+	return nil
+
+}
+
+func (ethash *PoIC) SealHash(header *types.Header) (hash common.Hash) {
+	hasher := sha3.NewLegacyKeccak256()
+
+	enc := []interface{}{
+		header.ParentHash,
+		header.UncleHash,
+		header.Coinbase,
+		header.Root,
+		header.TxHash,
+		header.ReceiptHash,
+		header.Bloom,
+		header.Difficulty,
+		header.Number,
+		header.GasLimit,
+		header.GasUsed,
+		header.Time,
+		header.Extra,
+	}
+	if header.BaseFee != nil {
+		enc = append(enc, header.BaseFee)
+	}
+	if header.WithdrawalsHash != nil {
+		panic("withdrawal hash set on ethash")
+	}
+	rlp.Encode(hasher, enc)
+	hasher.Sum(hash[:0])
+	return hash
 }

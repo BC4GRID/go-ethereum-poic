@@ -481,3 +481,48 @@ func HeaderParentHashFromRLP(header []byte) common.Hash {
 	}
 	return common.BytesToHash(parentHash)
 }
+
+//Added for PoIC
+
+// HashNoNonce returns the hash which is used as input for the proof-of-work search.
+func (h *Header) HashNoNonce() common.Hash {
+	return rlpHash([]interface{}{
+		h.ParentHash,
+		h.UncleHash,
+		h.Coinbase,
+		h.Root,
+		h.TxHash,
+		h.ReceiptHash,
+		h.Bloom,
+		h.Difficulty,
+		h.Number,
+		h.GasLimit,
+		h.GasUsed,
+		h.Time,
+		h.Extra,
+	})
+}
+
+// HashNoNonceWithDigest returns the hash which is used as input for the proof-of-inverted-capacity search.
+func (h *Header) HashNoNonceWithDigest() common.Hash {
+	return rlpHash([]interface{}{
+		h.ParentHash,
+		h.UncleHash,
+		h.Coinbase,
+		h.Root,
+		h.TxHash,
+		h.ReceiptHash,
+		h.Bloom,
+		h.Difficulty,
+		h.Number,
+		h.GasLimit,
+		h.GasUsed,
+		h.MixDigest,
+		h.Time,
+		h.Extra,
+	})
+}
+
+func RlpHash(x interface{}) common.Hash {
+	return rlpHash(x)
+}

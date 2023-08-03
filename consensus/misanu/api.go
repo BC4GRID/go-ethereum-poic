@@ -36,9 +36,10 @@ type API struct {
 // GetWork returns a work package for external miner.
 //
 // The work package consists of 3 strings:
-//   result[0] - 32 bytes hex encoded current block header pow-hash
-//   result[1] - 32 bytes hex encoded seed hash used for DAG
-//   result[2] - 32 bytes hex encoded boundary condition ("target"), 2^256/difficulty
+//
+//	result[0] - 32 bytes hex encoded current block header pow-hash
+//	result[1] - 32 bytes hex encoded seed hash used for DAG
+//	result[2] - 32 bytes hex encoded boundary condition ("target"), 2^256/difficulty
 func (api *API) GetWork() ([3]string, error) {
 	// if api.ethash.config.PowMode != ModeNormal && api.ethash.config.PowMode != ModeTest {
 	// 	return [3]string{}, errors.New("not supported")
@@ -119,7 +120,7 @@ func (api *API) GetHashrate() uint64 {
 }
 
 // APIs implements consensus.Engine, returning the user facing RPC APIs.
-func (p *PoIC) APIs(chain consensus.ChainReader) []rpc.API {
+func (p *PoIC) APIs(chain consensus.ChainHeaderReader) []rpc.API {
 	// In order to ensure backward compatibility, we exposes ethash RPC APIs
 	// to both eth and ethash namespaces.
 	return []rpc.API{
