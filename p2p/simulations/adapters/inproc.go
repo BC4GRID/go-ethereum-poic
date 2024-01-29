@@ -24,13 +24,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/event"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/node"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/simulations/pipes"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/event"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/node"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/simulations/pipes"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 	"github.com/gorilla/websocket"
 )
 

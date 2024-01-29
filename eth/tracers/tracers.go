@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
 )
 
 // Context contains some contextual infos for a transaction execution that is not

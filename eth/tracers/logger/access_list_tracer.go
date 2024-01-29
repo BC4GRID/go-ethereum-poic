@@ -19,9 +19,9 @@ package logger
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
 )
 
 // accessList is an accumulator for the set of accounts and storage slots an EVM

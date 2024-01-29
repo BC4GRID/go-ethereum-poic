@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/console/prompt"
-	"github.com/frostymuaddib/go-ethereum-master/core"
-	"github.com/frostymuaddib/go-ethereum-master/eth"
-	"github.com/frostymuaddib/go-ethereum-master/eth/ethconfig"
-	"github.com/frostymuaddib/go-ethereum-master/internal/jsre"
-	"github.com/frostymuaddib/go-ethereum-master/miner"
-	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/console/prompt"
+	"github.com/BC4GRID/go-ethereum-poic/core"
+	"github.com/BC4GRID/go-ethereum-poic/eth"
+	"github.com/BC4GRID/go-ethereum-poic/eth/ethconfig"
+	"github.com/BC4GRID/go-ethereum-poic/internal/jsre"
+	"github.com/BC4GRID/go-ethereum-poic/miner"
+	"github.com/BC4GRID/go-ethereum-poic/node"
 )
 
 const (

@@ -2,7 +2,7 @@
 
 package test
 
-import "github.com/frostymuaddib/go-ethereum-master/rlp"
+import "github.com/BC4GRID/go-ethereum-poic/rlp"
 
 type Test struct {
 	RawValue          rlp.RawValue

@@ -24,13 +24,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/v4test"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/discover"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/devp2p/internal/v4test"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/internal/flags"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/discover"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 	"github.com/urfave/cli/v2"
 )
 

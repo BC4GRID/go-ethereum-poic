@@ -17,9 +17,9 @@
 package trie
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
-	"github.com/frostymuaddib/go-ethereum-master/ethdb"
-	"github.com/frostymuaddib/go-ethereum-master/trie/triedb/hashdb"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/ethdb"
+	"github.com/BC4GRID/go-ethereum-poic/trie/triedb/hashdb"
 )
 
 // newTestDatabase initializes the trie database with specified scheme.

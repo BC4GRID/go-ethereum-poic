@@ -6,7 +6,7 @@ package misanu
 import (
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 //rez, err = p.getInterStateBlockEncoderSuffix(threadId, rows[i], value, startPos, endPos, numOfBits, abort)

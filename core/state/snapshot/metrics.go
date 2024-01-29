@@ -16,7 +16,7 @@
 
 package snapshot
 
-import "github.com/frostymuaddib/go-ethereum-master/metrics"
+import "github.com/BC4GRID/go-ethereum-poic/metrics"
 
 // Metrics in generation
 var (

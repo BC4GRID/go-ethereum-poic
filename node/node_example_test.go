@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/BC4GRID/go-ethereum-poic/node"
 )
 
 // SampleLifecycle is a trivial network service that can be attached to a node for

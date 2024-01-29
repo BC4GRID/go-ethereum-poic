@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 var (

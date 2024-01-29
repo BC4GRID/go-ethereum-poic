@@ -21,10 +21,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/bloombits"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/bloombits"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 // Filter can be used to retrieve and filter logs.

@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/event"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/msgrate"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/event"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/msgrate"
 )
 
 const (

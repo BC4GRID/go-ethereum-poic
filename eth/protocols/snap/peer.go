@@ -17,9 +17,9 @@
 package snap
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
 )
 
 // Peer is a collection of relevant information we have about a `snap` peer.

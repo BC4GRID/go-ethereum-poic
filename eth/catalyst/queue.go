@@ -19,10 +19,10 @@ package catalyst
 import (
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/beacon/engine"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/miner"
+	"github.com/BC4GRID/go-ethereum-poic/beacon/engine"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/miner"
 )
 
 // maxTrackedPayloads is the maximum number of prepared payloads the execution

@@ -19,9 +19,9 @@ package state
 import (
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
 )
 
 var (

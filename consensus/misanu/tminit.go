@@ -12,11 +12,11 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/encoders"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/encoders"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 type xForY struct {

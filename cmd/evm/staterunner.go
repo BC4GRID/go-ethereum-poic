@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/state"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/eth/tracers/logger"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/tests"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/state"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/eth/tracers/logger"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/tests"
 	"github.com/urfave/cli/v2"
 )
 

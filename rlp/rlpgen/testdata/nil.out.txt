@@ -1,6 +1,6 @@
 package test
 
-import "github.com/frostymuaddib/go-ethereum-master/rlp"
+import "github.com/BC4GRID/go-ethereum-poic/rlp"
 import "io"
 
 func (obj *Test) EncodeRLP(_w io.Writer) error {

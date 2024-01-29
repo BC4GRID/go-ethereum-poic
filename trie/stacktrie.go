@@ -24,9 +24,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 var ErrCommitDisabled = errors.New("no database for committing")

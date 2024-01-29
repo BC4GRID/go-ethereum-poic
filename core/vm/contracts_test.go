@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

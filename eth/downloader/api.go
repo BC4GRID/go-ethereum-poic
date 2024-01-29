@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master"
-	"github.com/frostymuaddib/go-ethereum-master/event"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic"
+	"github.com/BC4GRID/go-ethereum-poic/event"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 // DownloaderAPI provides an API which gives information about the current synchronisation status.

@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/frostymuaddib/go-ethereum-master
+go_import_path: github.com/BC4GRID/go-ethereum-poic
 sudo: false
 jobs:
   allow_failures:

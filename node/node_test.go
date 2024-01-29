@@ -26,10 +26,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/ethdb"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/ethdb"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 
 	"github.com/stretchr/testify/assert"
 )

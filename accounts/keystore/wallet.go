@@ -19,10 +19,10 @@ package keystore
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master"
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/BC4GRID/go-ethereum-poic"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

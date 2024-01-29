@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/snap"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/snap"
 )
 
 // ethPeerInfo represents a short summary of the `eth` sub-protocol metadata known

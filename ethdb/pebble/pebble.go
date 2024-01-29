@@ -29,10 +29,10 @@ import (
 
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/bloom"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/ethdb"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/ethdb"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
 )
 
 const (
@@ -187,7 +187,7 @@ func New(file string, cache int, handles int, namespace string, readonly bool) (
 			WriteStallEnd:   db.onWriteStallEnd,
 		},
 	}
-	// Disable seek compaction explicitly. Check https://github.com/frostymuaddib/go-ethereum-master/pull/20130
+	// Disable seek compaction explicitly. Check https://github.com/BC4GRID/go-ethereum-poic/pull/20130
 	// for more details.
 	opt.Experimental.ReadSamplingMultiplier = -1
 

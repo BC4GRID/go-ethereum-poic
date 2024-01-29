@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // LegacyTx is the transaction data of the original Ethereum transactions.

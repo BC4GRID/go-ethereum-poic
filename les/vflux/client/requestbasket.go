@@ -19,8 +19,8 @@ package client
 import (
 	"io"
 
-	"github.com/frostymuaddib/go-ethereum-master/les/utils"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/les/utils"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 const basketFactor = 1000000 // reference basket amount and value scale factor

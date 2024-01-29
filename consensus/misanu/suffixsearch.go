@@ -9,10 +9,10 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 func (p *PoIC) getInterStateBlockEncoderSuffix(threadId int, pocetno uint64, value uint64, startPos uint64, endPos uint64, numOfBits uint64, abort chan struct{}, ccMtx *sync.Mutex, callCounter *uint64) (*uint64, error) {

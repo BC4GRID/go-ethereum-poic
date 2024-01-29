@@ -19,9 +19,9 @@ package types
 import (
 	"io"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 //go:generate go run github.com/fjl/gencodec -type Log -field-override logMarshaling -out gen_log_json.go

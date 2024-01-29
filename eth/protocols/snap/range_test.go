@@ -19,7 +19,7 @@ package snap
 import (
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // Tests that given a starting hash and a density, the hash ranger can correctly

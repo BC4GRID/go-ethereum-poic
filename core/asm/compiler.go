@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/math"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/common/math"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
 )
 
 // Compiler contains information about the parsed source

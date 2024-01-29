@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
 )
 
 type testNode struct {

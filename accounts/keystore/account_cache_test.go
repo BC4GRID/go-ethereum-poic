@@ -28,8 +28,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 	"golang.org/x/exp/slices"
 )
 

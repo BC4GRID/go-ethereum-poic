@@ -29,12 +29,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/internal/testlog"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/rlpx"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/internal/testlog"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enr"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/rlpx"
 )
 
 type testTransport struct {

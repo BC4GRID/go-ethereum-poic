@@ -21,9 +21,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/params"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/params"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 // TestCreation tests that different genesis and fork rule combinations result in

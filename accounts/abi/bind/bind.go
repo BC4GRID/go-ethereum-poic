@@ -17,7 +17,7 @@
 // Package bind generates Ethereum contract Go bindings.
 //
 // Detailed usage document and tutorial available on the go-ethereum Wiki page:
-// https://github.com/frostymuaddib/go-ethereum-master/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/BC4GRID/go-ethereum-poic/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (
@@ -29,8 +29,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/frostymuaddib/go-ethereum-master/accounts/abi"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/accounts/abi"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

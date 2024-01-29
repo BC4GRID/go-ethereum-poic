@@ -15,8 +15,8 @@ import (
 	"sync"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/RandomFork"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/RandomFork"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 )
 
 type TradeoffTableSet struct {

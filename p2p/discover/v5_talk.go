@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/discover/v5wire"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/discover/v5wire"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 )
 
 // This is a limit for the number of concurrent talk requests.

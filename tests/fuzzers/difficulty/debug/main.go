@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/tests/fuzzers/difficulty"
+	"github.com/BC4GRID/go-ethereum-poic/tests/fuzzers/difficulty"
 )
 
 func main() {

@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/eth/filters"
-	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
-	"github.com/frostymuaddib/go-ethereum-master/node"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/eth/filters"
+	"github.com/BC4GRID/go-ethereum-poic/internal/ethapi"
+	"github.com/BC4GRID/go-ethereum-poic/node"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 	"github.com/graph-gophers/graphql-go"
 	gqlErrors "github.com/graph-gophers/graphql-go/errors"
 )

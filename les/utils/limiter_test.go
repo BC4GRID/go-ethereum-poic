@@ -20,7 +20,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 )
 
 const (

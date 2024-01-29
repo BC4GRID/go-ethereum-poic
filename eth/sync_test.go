@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/eth/downloader"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/snap"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/eth/downloader"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/snap"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 )
 
 // Tests that snap sync is disabled after a successful sync cycle.

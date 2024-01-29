@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 func (g *G1) one() *PointG1 {

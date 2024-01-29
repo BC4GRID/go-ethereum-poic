@@ -17,10 +17,10 @@
 package trie
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
-	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/trie/trienode"
 )
 
 // SecureTrie is the old name of StateTrie.

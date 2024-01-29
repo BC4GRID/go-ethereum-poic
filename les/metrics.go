@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
 )
 
 var (

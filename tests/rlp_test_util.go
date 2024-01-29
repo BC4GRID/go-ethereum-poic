@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

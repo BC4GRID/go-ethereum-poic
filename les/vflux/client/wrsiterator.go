@@ -19,9 +19,9 @@ package client
 import (
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/les/utils"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
+	"github.com/BC4GRID/go-ethereum-poic/les/utils"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/nodestate"
 )
 
 // WrsIterator returns nodes from the specified selectable set with a weighted random

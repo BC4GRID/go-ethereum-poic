@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 	"github.com/golang-jwt/jwt/v4"
 )
 

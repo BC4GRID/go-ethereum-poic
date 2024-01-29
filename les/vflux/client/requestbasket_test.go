@@ -20,7 +20,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/les/utils"
+	"github.com/BC4GRID/go-ethereum-poic/les/utils"
 )
 
 func checkU64(t *testing.T, name string, value, exp uint64) {

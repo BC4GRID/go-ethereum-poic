@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
-	"github.com/frostymuaddib/go-ethereum-master/les/utils"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/les/utils"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

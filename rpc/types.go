@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

@@ -21,11 +21,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
-	"github.com/frostymuaddib/go-ethereum-master/eth/downloader"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/eth/downloader"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 const (

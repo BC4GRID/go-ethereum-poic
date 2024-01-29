@@ -17,7 +17,7 @@
 package snap
 
 import (
-	metrics "github.com/frostymuaddib/go-ethereum-master/metrics"
+	metrics "github.com/BC4GRID/go-ethereum-poic/metrics"
 )
 
 var (

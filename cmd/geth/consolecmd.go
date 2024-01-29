@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
-	"github.com/frostymuaddib/go-ethereum-master/console"
-	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/utils"
+	"github.com/BC4GRID/go-ethereum-poic/console"
+	"github.com/BC4GRID/go-ethereum-poic/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

@@ -19,10 +19,10 @@ package ethtest
 import (
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/internal/utesting"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 )
 
 // Suite represents a structure used to test a node's conformance

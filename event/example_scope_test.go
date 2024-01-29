@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/event"
+	"github.com/BC4GRID/go-ethereum-poic/event"
 )
 
 // This example demonstrates how SubscriptionScope can be used to control the lifetime of

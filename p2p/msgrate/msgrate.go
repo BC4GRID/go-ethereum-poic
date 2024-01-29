@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // measurementImpact is the impact a single measurement has on a peer's final

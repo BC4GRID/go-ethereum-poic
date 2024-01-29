@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 	"github.com/stretchr/testify/require"
 )
 

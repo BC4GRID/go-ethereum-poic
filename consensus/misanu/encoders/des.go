@@ -4,7 +4,7 @@ import (
 	"crypto/des"
 	"encoding/binary"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 )
 
 /*DesEncoder uses Des for encoding function*/

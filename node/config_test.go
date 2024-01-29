@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

@@ -24,11 +24,11 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/math"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/accounts/keystore"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/math"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
 )
 
 // SignerUIAPI implements methods Clef provides for a UI to query, in the bidirectional communication

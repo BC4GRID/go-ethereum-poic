@@ -21,14 +21,14 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/beacon"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/beacon"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/ethash"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 func TestGenerateWithdrawalChain(t *testing.T) {

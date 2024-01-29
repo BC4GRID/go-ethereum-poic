@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/nat"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/nat"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 )
 
 func (p *PoIC) getXforGivenYBlockEncoder(value uint64, threadID int, startPos uint64, endPos uint64, numOfBits uint64, abort chan struct{}, rez chan xForY) {

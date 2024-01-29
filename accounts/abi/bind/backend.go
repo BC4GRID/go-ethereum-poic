@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 var (

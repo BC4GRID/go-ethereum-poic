@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/eth/tracers"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/eth/tracers"
 )
 
 func init() {

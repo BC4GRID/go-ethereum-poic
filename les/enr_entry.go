@@ -17,10 +17,10 @@
 package les
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/core/forkid"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/dnsdisc"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/core/forkid"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/dnsdisc"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 // lesEntry is the "les" ENR entry. This is set for LES servers only.

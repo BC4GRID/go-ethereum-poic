@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

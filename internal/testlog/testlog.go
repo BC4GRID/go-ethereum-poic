@@ -21,7 +21,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // Handler returns a log handler which logs to the unit test log of t.

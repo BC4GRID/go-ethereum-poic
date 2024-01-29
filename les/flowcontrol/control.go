@@ -23,8 +23,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 const (

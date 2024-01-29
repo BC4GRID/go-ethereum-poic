@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/tests"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/tests"
 	"github.com/urfave/cli/v2"
 )
 

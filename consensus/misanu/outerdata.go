@@ -10,9 +10,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 func abs(num int64) int64 {

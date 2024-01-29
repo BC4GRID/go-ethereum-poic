@@ -24,7 +24,7 @@ import (
 	"os"
 	"runtime/trace"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

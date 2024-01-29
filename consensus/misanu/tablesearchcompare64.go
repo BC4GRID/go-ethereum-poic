@@ -7,9 +7,9 @@ import (
 	"errors"
 	"sort"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 func (p *PoIC) getXforGivenYBinarySearchFirstIteration(value uint64, threadID int, startPos uint64, endPos uint64, numOfBits uint64, abort chan struct{}, rez chan tableRows) {

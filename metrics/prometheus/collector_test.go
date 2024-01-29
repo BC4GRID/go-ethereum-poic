@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
 )
 
 func TestMain(m *testing.M) {

@@ -25,13 +25,13 @@ import (
 	"os"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/discover"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/nat"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/netutil"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/utils"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/discover"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/nat"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/netutil"
 )
 
 func main() {

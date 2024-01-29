@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/eth/protocols/eth"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/rlpx"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/eth/protocols/eth"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/rlpx"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 type Message interface {

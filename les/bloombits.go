@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/bitutil"
-	"github.com/frostymuaddib/go-ethereum-master/light"
+	"github.com/BC4GRID/go-ethereum-poic/common/bitutil"
+	"github.com/BC4GRID/go-ethereum-poic/light"
 )
 
 const (

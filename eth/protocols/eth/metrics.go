@@ -16,7 +16,7 @@
 
 package eth
 
-import "github.com/frostymuaddib/go-ethereum-master/metrics"
+import "github.com/BC4GRID/go-ethereum-poic/metrics"
 
 // meters stores ingress and egress handshake meters.
 var meters bidirectionalMeters

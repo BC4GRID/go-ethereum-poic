@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 func u64(val uint64) *uint64 { return &val }

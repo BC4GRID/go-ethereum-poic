@@ -19,7 +19,7 @@ package main
 import (
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 func TestFacebook(t *testing.T) {

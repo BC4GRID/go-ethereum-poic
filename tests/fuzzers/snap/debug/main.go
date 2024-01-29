@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/tests/fuzzers/snap"
+	"github.com/BC4GRID/go-ethereum-poic/tests/fuzzers/snap"
 )
 
 func main() {

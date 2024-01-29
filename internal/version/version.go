@@ -23,10 +23,10 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
-const ourPath = "github.com/frostymuaddib/go-ethereum-master" // Path to our module
+const ourPath = "github.com/BC4GRID/go-ethereum-poic" // Path to our module
 
 // These variables are set at build-time by the linker when the build is
 // done by build/ci.go.

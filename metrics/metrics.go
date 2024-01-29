@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

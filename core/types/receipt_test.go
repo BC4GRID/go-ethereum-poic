@@ -24,9 +24,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/params"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/params"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 	"github.com/holiman/uint256"
 	"github.com/kylelemons/godebug/diff"
 )

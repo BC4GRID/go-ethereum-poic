@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/evm/internal/t8ntool"
-	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/evm/internal/t8ntool"
+	"github.com/BC4GRID/go-ethereum-poic/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

@@ -25,12 +25,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/ethash"
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/ethash"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 // Tests a recovery for a short canonical chain where a recent block was already
@@ -1870,7 +1870,7 @@ func testRepair(t *testing.T, tt *rewindTest, snapshots bool) {
 	}
 }
 
-// TestIssue23496 tests scenario described in https://github.com/frostymuaddib/go-ethereum-master/pull/23496#issuecomment-926393893
+// TestIssue23496 tests scenario described in https://github.com/BC4GRID/go-ethereum-poic/pull/23496#issuecomment-926393893
 // Credits to @zzyalbert for finding the issue.
 //
 // Local chain owns these blocks:

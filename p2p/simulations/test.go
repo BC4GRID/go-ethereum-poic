@@ -19,10 +19,10 @@ package simulations
 import (
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enr"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 // NoopService is the service that does not do anything

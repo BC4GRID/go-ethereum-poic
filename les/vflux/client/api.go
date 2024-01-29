@@ -19,9 +19,9 @@ package client
 import (
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
-	"github.com/frostymuaddib/go-ethereum-master/les/utils"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/les/utils"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 )
 
 // PrivateClientAPI implements the vflux client side API

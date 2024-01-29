@@ -35,7 +35,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 	"github.com/hashicorp/go-bexpr"
 )
 

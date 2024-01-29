@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/light"
+	"github.com/BC4GRID/go-ethereum-poic/light"
 )
 
 var (

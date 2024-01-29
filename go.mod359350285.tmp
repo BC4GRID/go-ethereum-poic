@@ -1,4 +1,4 @@
-module github.com/frostymuaddib/go-ethereum-master
+module github.com/BC4GRID/go-ethereum-poic
 
 go 1.19
 

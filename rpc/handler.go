@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 // handler handles JSON-RPC messages. There is one handler per connection. Note that

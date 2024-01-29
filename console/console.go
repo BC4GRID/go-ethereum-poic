@@ -30,12 +30,12 @@ import (
 	"syscall"
 
 	"github.com/dop251/goja"
-	"github.com/frostymuaddib/go-ethereum-master/console/prompt"
-	"github.com/frostymuaddib/go-ethereum-master/internal/jsre"
-	"github.com/frostymuaddib/go-ethereum-master/internal/jsre/deps"
-	"github.com/frostymuaddib/go-ethereum-master/internal/web3ext"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/console/prompt"
+	"github.com/BC4GRID/go-ethereum-poic/internal/jsre"
+	"github.com/BC4GRID/go-ethereum-poic/internal/jsre/deps"
+	"github.com/BC4GRID/go-ethereum-poic/internal/web3ext"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 )

@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/console/prompt"
+	"github.com/BC4GRID/go-ethereum-poic/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

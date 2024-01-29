@@ -19,8 +19,8 @@ package legacypool
 import (
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/state"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/state"
 )
 
 // noncer is a tiny virtual state database to manage the executable nonces of

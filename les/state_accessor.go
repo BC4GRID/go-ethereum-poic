@@ -21,12 +21,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/core"
-	"github.com/frostymuaddib/go-ethereum-master/core/state"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/core/vm"
-	"github.com/frostymuaddib/go-ethereum-master/eth/tracers"
-	"github.com/frostymuaddib/go-ethereum-master/light"
+	"github.com/BC4GRID/go-ethereum-poic/core"
+	"github.com/BC4GRID/go-ethereum-poic/core/state"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm"
+	"github.com/BC4GRID/go-ethereum-poic/eth/tracers"
+	"github.com/BC4GRID/go-ethereum-poic/light"
 )
 
 // noopReleaser is returned in case there is no operation expected

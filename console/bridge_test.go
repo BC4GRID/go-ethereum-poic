@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/dop251/goja"
-	"github.com/frostymuaddib/go-ethereum-master/internal/jsre"
+	"github.com/BC4GRID/go-ethereum-poic/internal/jsre"
 )
 
 // TestUndefinedAsParam ensures that personal functions can receive

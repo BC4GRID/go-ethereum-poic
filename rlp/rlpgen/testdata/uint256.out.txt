@@ -1,6 +1,6 @@
 package test
 
-import "github.com/frostymuaddib/go-ethereum-master/rlp"
+import "github.com/BC4GRID/go-ethereum-poic/rlp"
 import "github.com/holiman/uint256"
 import "io"
 

@@ -19,8 +19,8 @@ package client
 import (
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/nodestate"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/nodestate"
 )
 
 // FillSet tries to read nodes from an input iterator and add them to a node set by

@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/eth"
-	"github.com/frostymuaddib/go-ethereum-master/eth/downloader"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/node"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/eth"
+	"github.com/BC4GRID/go-ethereum-poic/eth/downloader"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/node"
 )
 
 // FullSyncTester is an auxiliary service that allows Geth to perform full sync

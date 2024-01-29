@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // EVMLogger is used to collect execution traces from an EVM transaction

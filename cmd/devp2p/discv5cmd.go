@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/v5test"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/discover"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/devp2p/internal/v5test"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/internal/flags"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/discover"
 	"github.com/urfave/cli/v2"
 )
 

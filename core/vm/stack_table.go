@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 func minSwapStack(n int) int {

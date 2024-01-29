@@ -23,12 +23,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	vfc "github.com/frostymuaddib/go-ethereum-master/les/vflux/client"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	vfc "github.com/BC4GRID/go-ethereum-poic/les/vflux/client"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 // Constants to match up protocol versions and messages

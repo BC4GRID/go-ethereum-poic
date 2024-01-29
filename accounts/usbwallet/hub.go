@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/event"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/event"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 	"github.com/karalabe/usb"
 )
 

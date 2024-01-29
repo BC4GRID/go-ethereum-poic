@@ -17,8 +17,8 @@
 package trie
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/trie/trienode"
 )
 
 // tracer tracks the changes of trie nodes. During the trie operations,

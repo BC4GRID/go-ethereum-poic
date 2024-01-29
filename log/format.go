@@ -26,7 +26,7 @@ const (
 
 // locationTrims are trimmed for display to avoid unwieldy log lines.
 var locationTrims = []string{
-	"github.com/frostymuaddib/go-ethereum-master/",
+	"github.com/BC4GRID/go-ethereum-poic/",
 }
 
 // PrintOrigins sets or unsets log location (file:line) printing for terminal

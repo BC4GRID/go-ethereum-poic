@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/node"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/simulations/adapters"
+	"github.com/BC4GRID/go-ethereum-poic/node"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

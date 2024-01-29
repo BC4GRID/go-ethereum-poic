@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/beacon/merkle"
-	"github.com/frostymuaddib/go-ethereum-master/beacon/params"
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/beacon/merkle"
+	"github.com/BC4GRID/go-ethereum-poic/beacon/params"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // LightClientUpdate is a proof of the next sync committee root based on a header

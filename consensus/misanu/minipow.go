@@ -9,9 +9,9 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 var POW_MASKS = [...]byte{0x0, 0x80, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC, 0xFE, 0xFF}

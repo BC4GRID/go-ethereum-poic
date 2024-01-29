@@ -10,11 +10,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/utils"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/utils"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
-	//"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/testutils"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
+	//"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/testutils"
 )
 
 type TradeoffTable struct {

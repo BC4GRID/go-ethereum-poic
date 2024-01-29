@@ -21,15 +21,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/consensus"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misc/eip1559"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misc/eip4844"
-	"github.com/frostymuaddib/go-ethereum-master/core/state"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/params"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
-	"github.com/frostymuaddib/go-ethereum-master/trie"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/consensus"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misc/eip1559"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misc/eip4844"
+	"github.com/BC4GRID/go-ethereum-poic/core/state"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/params"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/trie"
 )
 
 // Proof-of-stake protocol constants.

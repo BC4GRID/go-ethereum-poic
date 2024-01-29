@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
 )
 
 var (

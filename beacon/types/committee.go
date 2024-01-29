@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/frostymuaddib/go-ethereum-master/beacon/params"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/beacon/params"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
 	bls "github.com/protolambda/bls12-381-util"
 )
 

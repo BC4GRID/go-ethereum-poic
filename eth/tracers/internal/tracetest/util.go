@@ -5,8 +5,8 @@ import (
 	"unicode"
 
 	// Force-load native and js packages, to trigger registration
-	_ "github.com/frostymuaddib/go-ethereum-master/eth/tracers/js"
-	_ "github.com/frostymuaddib/go-ethereum-master/eth/tracers/native"
+	_ "github.com/BC4GRID/go-ethereum-poic/eth/tracers/js"
+	_ "github.com/BC4GRID/go-ethereum-poic/eth/tracers/native"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

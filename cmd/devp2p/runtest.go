@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/frostymuaddib/go-ethereum-master/cmd/devp2p/internal/v4test"
-	"github.com/frostymuaddib/go-ethereum-master/internal/utesting"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/devp2p/internal/v4test"
+	"github.com/BC4GRID/go-ethereum-poic/internal/utesting"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 	"github.com/urfave/cli/v2"
 )
 

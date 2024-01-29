@@ -43,7 +43,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/frostymuaddib/go-ethereum-master/crypto"
+	ethcrypto "github.com/BC4GRID/go-ethereum-poic/crypto"
 )
 
 var (

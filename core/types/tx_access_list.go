@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 //go:generate go run github.com/fjl/gencodec -type AccessTuple -out gen_access_tuple.go

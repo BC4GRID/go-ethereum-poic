@@ -35,25 +35,25 @@ import (
 	"strings"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
-	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
-	"github.com/frostymuaddib/go-ethereum-master/internal/flags"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/node"
-	"github.com/frostymuaddib/go-ethereum-master/params"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
-	"github.com/frostymuaddib/go-ethereum-master/signer/core"
-	"github.com/frostymuaddib/go-ethereum-master/signer/core/apitypes"
-	"github.com/frostymuaddib/go-ethereum-master/signer/fourbyte"
-	"github.com/frostymuaddib/go-ethereum-master/signer/rules"
-	"github.com/frostymuaddib/go-ethereum-master/signer/storage"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/accounts/keystore"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/utils"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/internal/ethapi"
+	"github.com/BC4GRID/go-ethereum-poic/internal/flags"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/node"
+	"github.com/BC4GRID/go-ethereum-poic/params"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/signer/core"
+	"github.com/BC4GRID/go-ethereum-poic/signer/core/apitypes"
+	"github.com/BC4GRID/go-ethereum-poic/signer/fourbyte"
+	"github.com/BC4GRID/go-ethereum-poic/signer/rules"
+	"github.com/BC4GRID/go-ethereum-poic/signer/storage"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"
@@ -870,7 +870,7 @@ func checkFile(filename string) error {
 	}
 	// Check the unix permission bits
 	// However, on windows, we cannot use the unix perm-bits, see
-	// https://github.com/frostymuaddib/go-ethereum-master/issues/20123
+	// https://github.com/BC4GRID/go-ethereum-poic/issues/20123
 	if runtime.GOOS != "windows" && info.Mode().Perm()&0377 != 0 {
 		return fmt.Errorf("file (%v) has insecure file permissions (%v)", filename, info.Mode().String())
 	}

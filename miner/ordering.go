@@ -20,10 +20,10 @@ import (
 	"container/heap"
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/math"
-	"github.com/frostymuaddib/go-ethereum-master/core/txpool"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/math"
+	"github.com/BC4GRID/go-ethereum-poic/core/txpool"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 // txWithMinerFee wraps a transaction with its gas price or effective miner gasTipCap

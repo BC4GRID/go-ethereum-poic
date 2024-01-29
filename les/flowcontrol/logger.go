@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
 )
 
 // logger collects events in string format and discards events older than the

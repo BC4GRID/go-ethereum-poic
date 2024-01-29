@@ -28,10 +28,10 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enr"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enr"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
 )
 
 // TODO concurrent WHOAREYOU tie-breaker

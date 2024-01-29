@@ -5,7 +5,7 @@
 
 package types
 
-import "github.com/frostymuaddib/go-ethereum-master/rlp"
+import "github.com/BC4GRID/go-ethereum-poic/rlp"
 import "io"
 
 func (obj *StateAccount) EncodeRLP(_w io.Writer) error {

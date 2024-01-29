@@ -20,7 +20,7 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 type (

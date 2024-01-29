@@ -3,7 +3,7 @@ package influxdb
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
 )
 
 func readMeter(namespace, name string, i interface{}) (string, map[string]interface{}) {

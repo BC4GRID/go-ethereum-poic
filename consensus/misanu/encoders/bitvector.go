@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misanu/guicolour"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misanu/guicolour"
 )
 
 //BitVector - structure represents simple bit vector implementation

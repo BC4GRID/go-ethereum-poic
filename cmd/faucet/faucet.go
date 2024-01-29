@@ -39,24 +39,24 @@ import (
 	"sync"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/accounts"
-	"github.com/frostymuaddib/go-ethereum-master/accounts/keystore"
-	"github.com/frostymuaddib/go-ethereum-master/cmd/utils"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/eth/downloader"
-	"github.com/frostymuaddib/go-ethereum-master/eth/ethconfig"
-	"github.com/frostymuaddib/go-ethereum-master/ethclient"
-	"github.com/frostymuaddib/go-ethereum-master/ethstats"
-	"github.com/frostymuaddib/go-ethereum-master/internal/version"
-	"github.com/frostymuaddib/go-ethereum-master/les"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/node"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/nat"
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/accounts"
+	"github.com/BC4GRID/go-ethereum-poic/accounts/keystore"
+	"github.com/BC4GRID/go-ethereum-poic/cmd/utils"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/eth/downloader"
+	"github.com/BC4GRID/go-ethereum-poic/eth/ethconfig"
+	"github.com/BC4GRID/go-ethereum-poic/ethclient"
+	"github.com/BC4GRID/go-ethereum-poic/ethstats"
+	"github.com/BC4GRID/go-ethereum-poic/internal/version"
+	"github.com/BC4GRID/go-ethereum-poic/les"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/node"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/nat"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 	"github.com/gorilla/websocket"
 )
 
@@ -458,7 +458,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://github.com/frostymuaddib/go-ethereum-master/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/BC4GRID/go-ethereum-poic/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

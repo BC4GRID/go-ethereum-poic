@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

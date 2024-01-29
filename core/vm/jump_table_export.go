@@ -19,7 +19,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/frostymuaddib/go-ethereum-master/params"
+	"github.com/BC4GRID/go-ethereum-poic/params"
 )
 
 // LookupInstructionSet returns the instructionset for the fork configured by

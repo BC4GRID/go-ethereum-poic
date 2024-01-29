@@ -27,17 +27,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master"
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/common/hexutil"
-	"github.com/frostymuaddib/go-ethereum-master/common/math"
-	"github.com/frostymuaddib/go-ethereum-master/consensus/misc/eip1559"
-	"github.com/frostymuaddib/go-ethereum-master/core/state"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/eth/filters"
-	"github.com/frostymuaddib/go-ethereum-master/internal/ethapi"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/common/hexutil"
+	"github.com/BC4GRID/go-ethereum-poic/common/math"
+	"github.com/BC4GRID/go-ethereum-poic/consensus/misc/eip1559"
+	"github.com/BC4GRID/go-ethereum-poic/core/state"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/eth/filters"
+	"github.com/BC4GRID/go-ethereum-poic/internal/ethapi"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 )
 
 var (

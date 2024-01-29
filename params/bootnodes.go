@@ -16,7 +16,7 @@
 
 package params
 
-import "github.com/frostymuaddib/go-ethereum-master/common"
+import "github.com/BC4GRID/go-ethereum-poic/common"
 
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the main Ethereum network.

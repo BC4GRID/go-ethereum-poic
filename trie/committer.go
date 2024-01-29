@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/trie/trienode"
 )
 
 // committer is the tool used for the trie Commit operation. The committer will

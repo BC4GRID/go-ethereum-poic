@@ -19,8 +19,8 @@ package beacon
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/consensus"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/consensus"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
 )
 
 // NewFaker creates a fake consensus engine for testing.

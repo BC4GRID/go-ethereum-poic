@@ -23,8 +23,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
 	"golang.org/x/exp/slices"
 )
 

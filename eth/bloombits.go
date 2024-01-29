@@ -19,8 +19,8 @@ package eth
 import (
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/bitutil"
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/common/bitutil"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
 )
 
 const (

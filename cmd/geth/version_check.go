@@ -26,7 +26,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 	"github.com/jedisct1/go-minisign"
 	"github.com/urfave/cli/v2"
 )

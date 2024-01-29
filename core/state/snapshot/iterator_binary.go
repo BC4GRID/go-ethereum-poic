@@ -19,7 +19,7 @@ package snapshot
 import (
 	"bytes"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // binaryIterator is a simplistic iterator to step over the accounts or storage

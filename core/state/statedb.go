@@ -24,18 +24,18 @@ import (
 	"sort"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
-	"github.com/frostymuaddib/go-ethereum-master/core/rawdb"
-	"github.com/frostymuaddib/go-ethereum-master/core/state/snapshot"
-	"github.com/frostymuaddib/go-ethereum-master/core/types"
-	"github.com/frostymuaddib/go-ethereum-master/crypto"
-	"github.com/frostymuaddib/go-ethereum-master/log"
-	"github.com/frostymuaddib/go-ethereum-master/metrics"
-	"github.com/frostymuaddib/go-ethereum-master/params"
-	"github.com/frostymuaddib/go-ethereum-master/rlp"
-	"github.com/frostymuaddib/go-ethereum-master/trie"
-	"github.com/frostymuaddib/go-ethereum-master/trie/trienode"
-	"github.com/frostymuaddib/go-ethereum-master/trie/triestate"
+	"github.com/BC4GRID/go-ethereum-poic/common"
+	"github.com/BC4GRID/go-ethereum-poic/core/rawdb"
+	"github.com/BC4GRID/go-ethereum-poic/core/state/snapshot"
+	"github.com/BC4GRID/go-ethereum-poic/core/types"
+	"github.com/BC4GRID/go-ethereum-poic/crypto"
+	"github.com/BC4GRID/go-ethereum-poic/log"
+	"github.com/BC4GRID/go-ethereum-poic/metrics"
+	"github.com/BC4GRID/go-ethereum-poic/params"
+	"github.com/BC4GRID/go-ethereum-poic/rlp"
+	"github.com/BC4GRID/go-ethereum-poic/trie"
+	"github.com/BC4GRID/go-ethereum-poic/trie/trienode"
+	"github.com/BC4GRID/go-ethereum-poic/trie/triestate"
 )
 
 type revision struct {
@@ -788,7 +788,7 @@ func (s *StateDB) Copy() *StateDB {
 	}
 	// Copy the dirty states, logs, and preimages
 	for addr := range s.journal.dirties {
-		// As documented [here](https://github.com/frostymuaddib/go-ethereum-master/pull/16485#issuecomment-380438527),
+		// As documented [here](https://github.com/BC4GRID/go-ethereum-poic/pull/16485#issuecomment-380438527),
 		// and in the Finalise-method, there is a case where an object is in the journal but not
 		// in the stateObjects: OOG after touch on ripeMD prior to Byzantium. Thus, we need to check for
 		// nil

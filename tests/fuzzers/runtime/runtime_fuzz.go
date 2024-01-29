@@ -17,7 +17,7 @@
 package runtime
 
 import (
-	"github.com/frostymuaddib/go-ethereum-master/core/vm/runtime"
+	"github.com/BC4GRID/go-ethereum-poic/core/vm/runtime"
 )
 
 // Fuzz is the basic entry point for the go-fuzz tool

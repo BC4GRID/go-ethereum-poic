@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/frostymuaddib/go-ethereum-master/common/mclock"
-	"github.com/frostymuaddib/go-ethereum-master/internal/testlog"
-	"github.com/frostymuaddib/go-ethereum-master/log"
+	"github.com/BC4GRID/go-ethereum-poic/common/mclock"
+	"github.com/BC4GRID/go-ethereum-poic/internal/testlog"
+	"github.com/BC4GRID/go-ethereum-poic/log"
 )
 
 func TestServerPortMapping(t *testing.T) {

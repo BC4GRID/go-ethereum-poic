@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/frostymuaddib/go-ethereum-master/common"
+	"github.com/BC4GRID/go-ethereum-poic/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

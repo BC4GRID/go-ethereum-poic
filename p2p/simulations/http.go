@@ -30,11 +30,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/frostymuaddib/go-ethereum-master/event"
-	"github.com/frostymuaddib/go-ethereum-master/p2p"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/enode"
-	"github.com/frostymuaddib/go-ethereum-master/p2p/simulations/adapters"
-	"github.com/frostymuaddib/go-ethereum-master/rpc"
+	"github.com/BC4GRID/go-ethereum-poic/event"
+	"github.com/BC4GRID/go-ethereum-poic/p2p"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/enode"
+	"github.com/BC4GRID/go-ethereum-poic/p2p/simulations/adapters"
+	"github.com/BC4GRID/go-ethereum-poic/rpc"
 	"github.com/gorilla/websocket"
 	"github.com/julienschmidt/httprouter"
 )
