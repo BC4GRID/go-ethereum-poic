@@ -1,4 +1,4 @@
-/package misanu
+package misanu
 
 import (
 	"encoding/binary"
