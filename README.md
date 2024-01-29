@@ -1,7 +1,8 @@
 
+
 ## Go Ethereum with Time-Memory-Data Trade-Off Based Consensus Protocol
 
-This repository hosts the integration of a Time-Memory-Data Trade-Off (TMD-TO) based consensus protocol into the official Go Ethereum implementation. This protocol introduces a unique puzzle, centered around inverting a one-way function, solved using the TMD-TO approach. This paradigm shift allows for reduced energy consumption, leveraging memory to solve computational puzzles efficiently.
+This repository hosts the integration of a Time-Memory-Data Trade-Off (TMD-TO) based consensus protocol into the official Go Ethereum implementation (Details regarding the protocol can be found in the following [publication](https://doi.org/10.1109/ACCESS.2020.3013199). This protocol introduces a unique puzzle, centered around inverting a one-way function, solved using the TMD-TO approach. This paradigm shift allows for reduced energy consumption, leveraging memory to solve computational puzzles efficiently.
 
 ## Building the Source
 
@@ -21,7 +22,11 @@ The go-ethereum project includes several executables located in the `cmd` direct
 
 ## Running `geth`
 
-An exhaustive list of command line flags is beyond the scope of this document. For detailed information, consult the [CLI Wiki page](https://geth.ethereum.org/docs/fundamentals/command-line-options). Additionally, a comprehensive tutorial on setting up a private Ethereum network can be found [here](https://geth.ethereum.org/docs/fundamentals/private-network).
+An exhaustive list of command line flags is beyond the scope of this document. For detailed information, consult the [CLI Wiki page](https://geth.ethereum.org/docs/fundamentals/command-line-options). Additionally, a comprehensive tutorial on setting up a private Ethereum network can be found [here](https://geth.ethereum.org/docs/fundamentals/private-network). To customize the size of the TMD-TO table used by the miner, add a `dimension.txt` file in the same folder where the `geth` executable is, which contains two numbers: table width and table height.
+
+## Genesis block
+
+The file that defines genesis block for the private network that uses the new consensus protocol can be found [here](./consensus/misanu/genesis/genesis.json). The `tableSize` parameter defines the difficulty of the consensus, while `miniPowDiff` defines the difficulty of the mini PoW used in the protocol.
 
 ## License
 

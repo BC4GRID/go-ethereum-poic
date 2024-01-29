@@ -1,4 +1,4 @@
-package misanu
+/package misanu
 
 import (
 	"encoding/binary"
@@ -59,27 +59,27 @@ func chooseTableDimension() (uint64, uint64) {
 	//tabele, ako nema citamo default
 
 	//zakucano ime!
-	file, err := os.Open("dimenzije.txt")
+	file, err := os.Open("dimension.txt")
 	if err != nil {
-		guicolour.BrightYellowPrintf(true, "Нема dimenzije.txt. Учитавање подразумеваних вредности.\n")
+		guicolour.BrightYellowPrintf(true, "Нема dimension.txt. Учитавање подразумеваних вредности.\n")
 		return TABLE_WIDTH, TABLE_HEIGHT
 	} else {
 		var w uint64
 		var h uint64
 		n, e := fmt.Fscanf(file, "%d %d", &w, &h)
 		if n != 2 {
-			guicolour.BrightYellowPrintf(true, "Нису учитане обе димензије из dimenzije.txt. Учитавање подразумеваних вредности.\n")
+			guicolour.BrightYellowPrintf(true, "Нису учитане обе димензије из dimension.txt. Учитавање подразумеваних вредности.\n")
 			return TABLE_WIDTH, TABLE_HEIGHT
 		}
 		if e != nil {
-			guicolour.BrightYellowPrintf(true, "Грешка при читању dimenzije.txt. Учитавање подразумеваних вредности.\n")
+			guicolour.BrightYellowPrintf(true, "Грешка при читању dimension.txt. Учитавање подразумеваних вредности.\n")
 			return TABLE_WIDTH, TABLE_HEIGHT
 		}
 		guicolour.BrightYellowPrintf(true, "Учитане вредности: %d x %d.\n", w, h)
 		return 1 << w, 1 << h
 	}
 
-	guicolour.BrightYellowPrintf(true, "Нема dimenzije.txt. Учитавање подразумеваних вредности.\n")
+	guicolour.BrightYellowPrintf(true, "Нема dimension.txt. Учитавање подразумеваних вредности.\n")
 	return TABLE_WIDTH, TABLE_HEIGHT
 }
 
